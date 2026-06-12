@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package criarcontrato;
+
+/**
+ *
+ * @author Cliente
+ */
+class Contrato {
+
+    private final int numero;
+    private final int idInquilino;
+    private final double valor;
+
+    public Contrato(
+            int numero,
+            int idInquilino,
+            double valor) {
+
+        this.numero = numero;
+        this.idInquilino = idInquilino;
+        this.valor = valor;
+    }
+
+    public int getNumero() {
+
+        return numero;
+    }
+}

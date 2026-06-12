@@ -1,0 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package cadastrarinquilinoinvalido;
+
+/**
+ *
+ * @author Cliente
+ */
+class Sistema {
+
+    public void cadastrarInquilino(
+            String nome,
+            String cpf,
+            String email,
+            String telefone) {
+
+        // CPF inválido
+        if (cpf.length() != 11) {
+
+            exibirErro();
+
+            throw new RuntimeException(
+                    "CPF invalido");
+        }
+
+        System.out.println(
+                "Cadastro realizado.");
+    }
+
+    public void exibirErro() {
+
+        System.out.println(
+                "ERRO: Documento invalido.");
+    }
+}   

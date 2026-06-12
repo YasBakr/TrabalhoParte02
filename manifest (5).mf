@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package cadastrarinquilinoinvalido;
+
+/**
+ * CT04 - Cadastro inválido
+ */
+public class CadastrarInquilinoInvalido {
+
+    public static void main(String[] args) {
+
+        Sistema sistema = new Sistema();
+
+        try {
+
+            sistema.cadastrarInquilino(
+                    "Vnicius",
+                    "123",
+                    "vini@email.com",
+                    "888888888"
+            );
+
+        } catch (Exception e) {
+
+            System.out.println(
+                    "Excecao capturada: "
+                            + e.getMessage());
+        }
+    }
+}

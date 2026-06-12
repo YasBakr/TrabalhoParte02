@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package consultarimoveis;
+
+/**
+ *
+ * @author Cliente
+ */
+class Imovel {
+
+    private final String tipo;
+    private final double valor;
+
+    public Imovel(String tipo,
+                  double valor) {
+
+        this.tipo = tipo;
+        this.valor = valor;
+    }
+
+    // Método solicitado pelo cenário
+    public String getDescricao() {
+
+        return "Tipo: " + tipo;
+    }
+
+    public double getValor() {
+
+        return valor;
+    }
+}
